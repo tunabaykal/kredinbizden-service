@@ -1,6 +1,6 @@
-package model;
+package com.patika.kredinbizdenservice.model;
 
-import enums.SectorType;
+import com.patika.kredinbizdenservice.enums.SectorType;
 
 import java.time.LocalDate;
 

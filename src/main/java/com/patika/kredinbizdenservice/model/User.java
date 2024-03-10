@@ -1,4 +1,4 @@
-package model;
+package com.patika.kredinbizdenservice.model;
 
 import java.time.LocalDate;
 import java.util.List;

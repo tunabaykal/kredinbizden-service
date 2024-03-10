@@ -1,6 +1,7 @@
-package model;
+package com.patika.kredinbizdenservice.model;
 
-import enums.LoanType;
+
+import com.patika.kredinbizdenservice.enums.LoanType;
 
 import java.math.BigDecimal;
 import java.util.List;

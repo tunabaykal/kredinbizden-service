@@ -1,6 +1,7 @@
-package model;
+package com.patika.kredinbizdenservice.model;
 
-import enums.ApplicationStatus;
+
+import com.patika.kredinbizdenservice.enums.ApplicationStatus;
 
 import java.time.LocalDateTime;
 

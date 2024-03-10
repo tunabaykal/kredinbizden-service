@@ -1,7 +1,7 @@
-package model;
+package com.patika.kredinbizdenservice.model;
 
-import enums.LoanType;
-import enums.VechileStatuType;
+import com.patika.kredinbizdenservice.enums.LoanType;
+import com.patika.kredinbizdenservice.enums.VechileStatuType;
 
 import java.math.BigDecimal;
 

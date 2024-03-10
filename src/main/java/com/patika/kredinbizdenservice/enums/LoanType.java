@@ -1,5 +1,4 @@
-package enums;
-
+package com.patika.kredinbizdenservice.enums;
 public enum LoanType {
 
     IHTIYAC_KREDISI,

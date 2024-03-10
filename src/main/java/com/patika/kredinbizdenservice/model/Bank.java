@@ -1,4 +1,4 @@
-package model;
+package com.patika.kredinbizdenservice.model;
 
 import java.util.List;
 
