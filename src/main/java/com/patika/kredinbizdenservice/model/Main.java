@@ -9,6 +9,12 @@ package com.patika.kredinbizdenservice.model;
 public class Main {
     public static void main(String[] args) {
         Employee employee = new Employee("Emre", "Ünaldı", 23);
+
+        System.out.println(employee);
+        System.out.println(employee);
+        System.out.println(employee);
+        System.out.println(employee);
+        System.out.println(employee);
         System.out.println(employee);
     }
 }
