@@ -1,6 +1,7 @@
 package com.patika.kredinbizdenservice.model;
 
 import java.math.BigDecimal;
+import com.patika.kredinbizdenservice.enums.LoanType;
 
 public abstract class Loan implements Product {
 
@@ -14,6 +15,8 @@ public abstract class Loan implements Product {
 
     public Loan() {
     }
+
+
 
     public Loan(BigDecimal amount, Integer installment, Double interestRate) {
         this.amount = amount;
@@ -63,5 +66,18 @@ public abstract class Loan implements Product {
                 ", bank=" + bank +
                 ", interestRate=" + interestRate +
                 '}';
+    }
+
+    public static Loan createLoan(LoanType type, BigDecimal amount, Integer installment, Double interestRate) {
+        switch (type) {
+            case IHTIYAC_KREDISI:
+                return new ConsumerLoan(amount, installment, interestRate);
+            case KONUT_KREDISI:
+                return new HouseLoan(amount, installment, interestRate);
+            case ARAC_KREDISI:
+                return new VechileLoan(amount, installment, interestRate);
+            default:
+                throw new IllegalArgumentException("Unknown Loan Type");
+        }
     }
 }
